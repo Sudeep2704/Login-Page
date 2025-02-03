@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { registerUser } from "../services/authService";
-import { BorderBeam } from "./../../components/ui/border-beam";
+
 
 export default function Register({ setAuthState }: { setAuthState: (state: "login" | "register" | "home") => void }) {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
